@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Заказать трек
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Заказать трек</h1>
+    <div class="alert alert-info">Мы многого не трубем! По оставленному телефону мы свяжемся с вами для обсуждения деталей!</div>
+    <form method="post">
+        <input type="text" name="name" id="name" class="form-control" placeholder="Введите имя" required><br>
+        <input type="text" name="phone" id="phone" class="form-control" placeholder="Введите телефон" required><br>
+        <input type="submit" value="Отправить" class="btn btn-success">
+    </form>
+</div>
+{% endblock %}

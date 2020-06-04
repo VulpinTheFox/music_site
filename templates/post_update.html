@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Обновление трека
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Обновить трек</h1>
+    <form method="post">
+        <input type="text" name="title" id="title" class="form-control" value="{{ article.title }}" placeholder="Введите название"><br>
+        <textarea type="text" name="intro" id="intro" class="form-control"  placeholder="Введите анонс">{{ article.intro }}</textarea><br>
+        <textarea type="text" name="link" id="text" class="form-control" placeholder="Вставьте ссылку на видео">{{ article.link }}</textarea><br>
+        <input type="submit" class="btn btn-success" value="Обновить">
+    </form>
+</div>
+{% endblock %}

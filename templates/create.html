@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Добавление трека
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Добавить музыку</h1>
+    <form method="post">
+        <input type="text" name="title" id="title" class="form-control" placeholder="Введите название"><br>
+        <textarea type="text" name="intro" id="intro" class="form-control" placeholder="Введите анонс"></textarea><br>
+        <textarea type="text" name="link" id="link" class="form-control" placeholder="Введите ссылку на видео"></textarea><br>
+        <input class="btn btn-success" type="submit" value="Отправить">
+    </form>
+</div>
+{% endblock %}

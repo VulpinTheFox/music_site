@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Главна страница
+{% endblock %}
+
+{% block body %}
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-4">Music Maker</h1>
+  <p class="lead">Работаем быстро. Ну тут еще должно быть что-то, что вас точно привлечет, но нам лень придумывать это. Поэтому придумайте слоган за нас ;)</p>
+</div>
+<div class="container">
+    <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Заказать трек</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">1999 <small class="text-muted">руб.</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li>Вокал</li>
+                    <li>Живые инструменты</li>
+                    <li>Ремиксы</li>
+                    <li>Мастеринг</li>
+                    <li>И многое другое...</li>
+                </ul>
+                <a href="/new_order" type="button" class="btn btn-lg btn-primary">Заказать</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
